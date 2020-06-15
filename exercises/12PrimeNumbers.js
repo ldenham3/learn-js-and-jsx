@@ -4,13 +4,15 @@
 //couldnt figure out prime formula, skipped to class solution because that felt like not what im trying to learn
 function showPrimes(limit) {
     for (let number = 2; number <= limit; number++) {
+
         let isPrime = true;
-        for (let factor = 2; factor < number; factor++){
+        for (let factor = 2; factor < number; factor++) {
             if (number % factor === 0){
                 isPrime = false;
                 break;
             }
         }
+
         if (isPrime) console.log(number);
     }
 }
@@ -18,6 +20,8 @@ function showPrimes(limit) {
 // showPrimes(30);
 
 //SEPERATING INTO DIFFERENT FUNCTIONS
+
+//NOTE: I am leaving this jumble of nightmares BECAUSE i was at the end of a long long day and should have stopped but I didnt so this is staying to remind me of the asanine crap I come up with when im too tired and need to walk away before I break things. I started the next say with a clean file, 12b, where I went stop by step on my own to write it, clean it up, and optomize it. Thats where my solution actually is. This one is to shame me. 12c will have it done seperations of concerns style. 
 
 //MINE
 
